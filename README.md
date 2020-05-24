@@ -41,7 +41,8 @@ Because the accelerometer is affected by gravity, you can
 It is only when the values ​​are offset.
 
 It means that we have to have no gravity to live 
-`private float accX, accY, accZ, tempX, tempY, tempZ;
+```
+private float accX, accY, accZ, tempX, tempY, tempZ;
 private float alpha = 0.8f;
 
 tempX = alpha * tempX + (1 - alpha) * event.values[0];
@@ -50,8 +51,10 @@ tempZ = alpha * tempZ + (1 - alpha) * event.values[2];
 
 accX = event.values[0] - tempX;
 accY = event.values[1] - tempY;
-accZ = event.values[2] - tempZ;`
+accZ = event.values[2] - tempZ;
 
+
+```
 ### 3. Linear acceleration sensor
 
 However, Google offers an acceleration sensor that eliminates the acceleration of gravity.
